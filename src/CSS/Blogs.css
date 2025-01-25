@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px !important;
+  /* background-color: rgb(108, 173, 42); */
+}
+.fs_list i {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .firstsection {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .firstsection {
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #121d27;
+}
+
+nav ul a {
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+}
+nav ul {
+  margin-top: 20px;
+}
+
+.bgcafe {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.bgcafe h1 {
+  font: normal normal normal 60px/69px Bellefair;
+  letter-spacing: 1.2px;
+  color: #c5a572;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .bgcafe {
+    top: 155px;
+  }
+  .bgcafe h1 {
+    font: normal normal normal 30px/69px Bellefair;
+    letter-spacing: 1.2px;
+    color: #c5a572;
+    opacity: 1;
+  }
+
+  .herobg img {
+    height: 30vh;
+  }
+  .herobg {
+    height: 201px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.bloglist ul li {
+  display: inline;
+  margin-right: 50px;
+}
+.bloglist ul li a {
+  cursor: pointer;
+}
+
+.blogscontent span {
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 20px/50px Montserrat;
+  letter-spacing: 0px;
+  color: #979797;
+  opacity: 1;
+}
+
+.blogscontent h1 {
+  text-align: left;
+  font: normal normal medium 25px/40px Montserrat;
+  letter-spacing: 0px;
+  color: #271d12;
+  opacity: 1;
+  max-height: 45px;
+  min-height: 45px;
+}
+.blogscontent p {
+  text-align: left;
+  font: normal normal medium 20px/31px Montserrat;
+  letter-spacing: 0.4px;
+  color: #000000;
+  opacity: 0.59;
+  max-height: 100px;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.blogscontent h4 {
+  text-align: left;
+  font: normal normal medium 20px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #c5a572;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .allblogs {
+    grid-template-columns: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.new {
+  border-top: 1px dashed #c5a572;
+  width: 20%;
+  margin-top: 40px;
+}
+
+.footerbg {
+  background-image: url(../Assets/footerbg.png);
+}
+.footer {
+  background: #121d27ed 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.f_c h1,
+i {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+.f_c p {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.f_s h1 {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+.f_s ul {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+.f_h h1 {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+.f_h span {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.f_n button {
+  background-color: #c5a572;
+}
+
+.f_n h1 {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+
+.f_n p {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.f_r p {
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+@media screen and (max-width: 400px) {
+  .footerlist {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  .border-r-2,
+  .border-dashed {
+    border: none;
+  }
+  .footerlist {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}

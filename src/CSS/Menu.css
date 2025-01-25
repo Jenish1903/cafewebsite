@@ -1,0 +1,489 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px !important;
+  /* background-color: rgb(108, 173, 42); */
+}
+.fs_list i {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .firstsection {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .firstsection {
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #121d27;
+}
+
+nav ul a {
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+}
+nav ul {
+  margin-top: 20px;
+}
+
+.bgcafe {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.bgcafe h1 {
+  font: normal normal normal 60px/69px Bellefair;
+  letter-spacing: 1.2px;
+  color: #c5a572;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .bgcafe {
+    top: 155px;
+  }
+  .bgcafe h1 {
+    font: normal normal normal 30px/69px Bellefair;
+    letter-spacing: 1.2px;
+    color: #c5a572;
+    opacity: 1;
+  }
+
+  .herobg img {
+    height: 30vh;
+  }
+  .herobg {
+    height: 201px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #121d27ad 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.overlay h1 {
+  font: normal normal medium 22px/27px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .menulist {
+    grid-template-columns: 100%;
+    justify-items: center;
+  }
+  .overlay {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.smainpricecontent h1 {
+  font: normal normal normal 40px/46px Bellefair;
+  letter-spacing: 0px;
+  color: #c5a572;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+.sleftside h1 {
+  text-align: left;
+  font: normal normal normal 35px/40px Bellefair;
+  letter-spacing: 0.28px;
+  color: #121d27;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.sleftside span {
+  text-align: left;
+  font: normal normal normal 35px/40px Bellefair;
+  letter-spacing: 0.28px;
+  color: #271b12;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.sleftside p {
+  text-align: left;
+  font: normal normal normal 20px/24px Montserrat;
+  letter-spacing: 0.16px;
+  color: #121d27;
+  text-transform: lowercase;
+  opacity: 0.59;
+}
+
+.sleftsidedata {
+  margin-top: 50px;
+}
+
+.srightside h1 {
+  text-align: left;
+  font: normal normal normal 35px/40px Bellefair;
+  letter-spacing: 0.28px;
+  color: #121d27;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.srightside span {
+  text-align: left;
+  font: normal normal normal 35px/40px Bellefair;
+  letter-spacing: 0.28px;
+  color: #271b12;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.srightside p {
+  text-align: left;
+  font: normal normal normal 20px/24px Montserrat;
+  letter-spacing: 0.16px;
+  color: #121d27;
+  text-transform: lowercase;
+  opacity: 0.59;
+}
+
+.sleftsidedata {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  .smainprice {
+    grid-template-columns: 100%;
+  }
+  .sleftsidedata {
+    display: inline;
+    margin-top: 30px;
+  }
+  .sleftsidedata hr {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+.lunchimg {
+  background-image: url("/Assets/menu/bgmenuimg.png");
+}
+
+.lmainpricecontent h1 {
+  font: normal normal normal 40px/46px Bellefair;
+  letter-spacing: 0px;
+  color: #c5a572;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+.lleftside h1 {
+  text-align: left;
+  font: normal normal normal 35px/40px Bellefair;
+  letter-spacing: 0.28px;
+  color: white;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.lleftside span {
+  text-align: left;
+  font: normal normal normal 35px/40px Bellefair;
+  letter-spacing: 0.28px;
+  color: white;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.lleftside p {
+  text-align: left;
+  font: normal normal normal 20px/24px Montserrat;
+  letter-spacing: 0.16px;
+  color: white;
+  text-transform: lowercase;
+  opacity: 0.59;
+}
+
+.lleftsidedata {
+  margin-top: 50px;
+}
+
+.lrightside h1 {
+  text-align: left;
+  font: normal normal normal 35px/40px Bellefair;
+  letter-spacing: 0.28px;
+  color: white;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.lrightside span {
+  text-align: left;
+  font: normal normal normal 35px/40px Bellefair;
+  letter-spacing: 0.28px;
+  color: white;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.lrightside p {
+  text-align: left;
+  font: normal normal normal 20px/24px Montserrat;
+  letter-spacing: 0.16px;
+  color: white;
+  text-transform: lowercase;
+  opacity: 0.59;
+}
+
+.lleftsidedata {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  .lmainprice {
+    grid-template-columns: 100%;
+  }
+  .lleftsidedata {
+    display: inline;
+    margin-top: 30px;
+  }
+  .lleftsidedata hr {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.sm {
+  background: #f4eee4 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.leftarrow {
+  top: 4692px;
+  left: 295px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.rightarrow {
+  top: 4692px;
+  left: 376px;
+  width: 40px;
+  height: 40px;
+  background: #c5a572 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .specialmenu {
+    grid-template-columns: 100%;
+  }
+  .specialmenu .leftarrow,
+  .rightarrow {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.mcontact {
+  text-align: center;
+}
+
+.mcontact h1 {
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 0.18px;
+  color: #c5a572;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.mcontact h2 {
+  font: normal normal normal 45px/65px Bellefair;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 1;
+}
+.mcontact p {
+  text-align: center;
+  font: normal normal medium 20px/37px Montserrat;
+  letter-spacing: 0.4px;
+  color: #121d27;
+  opacity: 0.59;
+}
+
+.mcontact button {
+  top: 660px;
+  left: 769px;
+  width: 144px;
+  height: 45px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #c5a572;
+  opacity: 1;
+  font: normal normal medium 26px/32px Montserrat;
+  letter-spacing: 0px;
+  color: #c5a572;
+  opacity: 1;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 400px) {
+  .mcontact {
+    width: 80%;
+  }
+  .mcontact h2 {
+    font: normal normal normal 25px/65px Bellefair;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.new {
+  border-top: 1px dashed #c5a572;
+  width: 20%;
+  margin-top: 40px;
+}
+
+.footerbg {
+  background-image: url(../Assets/footerbg.png);
+}
+.footer {
+  background: #121d27ed 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.f_c h1,
+i {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+.f_c p {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.f_s h1 {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+.f_s ul {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+.f_h h1 {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+.f_h span {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.f_n button {
+  background-color: #c5a572;
+}
+
+.f_n h1 {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+
+.f_n p {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.f_r p {
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+@media screen and (max-width: 400px) {
+  .footerlist {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  .border-r-2,
+  .border-dashed {
+    border: none;
+  }
+  .footerlist {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}

@@ -1,0 +1,813 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px !important;
+  /* background-color: rgb(108, 173, 42); */
+}
+.fs_list i {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .firstsection {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .firstsection {
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #121d27;
+}
+
+nav ul a {
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+}
+nav ul {
+  margin-top: 20px;
+}
+
+.bgcafe {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.bgcafe h1 {
+  font: normal normal normal 60px/75px Great Vibes;
+  letter-spacing: 1.2px;
+  color: #c5a572;
+}
+
+.bgcafe h2 {
+  font: normal normal normal 40px/69px Bellefair;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.bgcafe button {
+  top: 660px;
+  left: 769px;
+  width: 174px;
+  height: 45px;
+  background: #ffffff00 0% 0% no-repeat padding-box;
+  border: 1px solid #ffffff;
+  font: normal normal medium 20px/24px Montserrat;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .bgcafe {
+    top: 225px;
+  }
+  .bgcafe h1 {
+    font: normal normal normal 20px/20px Great Vibes;
+    letter-spacing: 1.2px;
+    color: #c5a572;
+  }
+  .bgcafe h2 {
+    font: normal normal normal 20px/20px Bellefair;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .herobg img {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.ourstory {
+  background-image: url(../Assets/ourstorybg2.png);
+  background-repeat: no-repeat;
+  background-position: 1150px 150px;
+}
+
+.ourstorycontent h1 {
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 0.18px;
+  color: #c5a572;
+  text-transform: uppercase;
+}
+
+.ourstorycontent h2 {
+  font: normal normal normal 45px/50px Bellefair;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.ourstorycontent p {
+  top: 1292px;
+  left: 135px;
+  width: 638px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal medium 20px/37px Montserrat;
+  letter-spacing: 0.4px;
+  color: #000000;
+  opacity: 0.59;
+  margin-top: 40px;
+}
+
+.ourstorycontent button {
+  top: 1568px;
+  left: 135px;
+  width: 174px;
+  height: 45px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #c5a572;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .ourstory {
+    display: inline-block;
+  }
+  .ourstorycontent h2 {
+    font: normal normal normal 20px/0px Bellefair;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .ourstorycontent h1 {
+    text-align: center;
+  }
+  .ourstorycontent p {
+    text-align: left;
+    font: normal normal medium 10px/0px Montserrat;
+    letter-spacing: 0.4px;
+    color: #000000;
+    opacity: 0.59;
+    width: 100%;
+  }
+  .ourstorycontent button {
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+  .ourstoryimage {
+    display: inline-block;
+  }
+  .ourstoryimage .ourstoryimg1 {
+    margin-left: 60px;
+    margin-bottom: 30px;
+  }
+  .ourstoryimage .ourstoryimg2 {
+    margin-left: 60px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+.ourservicespart {
+  background-image: url("../Assets/ourserviceimg.png");
+  background-repeat: no-repeat;
+}
+
+.ourservicespart h1 {
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 0.44px;
+  color: #c5a572;
+  text-transform: uppercase;
+}
+
+.ourservicespart h2 {
+  font: normal normal normal 60px/69px Bellefair;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+}
+
+.happyservices,
+.anniversariesservices,
+.birthdayservices {
+  text-align: center;
+  font: normal normal normal 19px/37px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.59;
+  border: 1px solid #c5a572;
+  padding: 20px;
+}
+
+/* .servicespost h1 {
+  margin-top: 25px;
+} */
+
+@media screen and (max-width: 400px) {
+  .servicespost {
+    grid-template-columns: 100%;
+  }
+  .happyservices,
+  .birthdayservices {
+    margin-bottom: 70px;
+  }
+  .happyservices img {
+    left: 91px;
+  }
+  .birthdayservices img {
+    left: 91px;
+  }
+  .anniversariesservices img {
+    left: 91px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.todaysection {
+  background-image: url("../Assets/ourstorybg1.png");
+  background-repeat: no-repeat;
+  background-position: 10px 500px;
+}
+.specialtoday h1 {
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 0.18px;
+  color: #c5a572;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.specialtodaycontent h1 {
+  font: normal normal normal 45px/60px Bellefair;
+  letter-spacing: 0px;
+  color: #121d27;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.specialtodaycontent p {
+  text-align: left;
+  font: normal normal medium 20px/37px Montserrat;
+  letter-spacing: 0.4px;
+  color: #000000;
+  opacity: 0.59;
+}
+
+.specialtoday {
+  margin: 30px;
+}
+
+.image-container {
+  position: relative;
+  margin: 33px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay h2 {
+  font: normal normal normal 35px/50px Bellefair;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.overlay span {
+  text-align: center;
+  font: normal normal medium 24px/37px Montserrat;
+  letter-spacing: 0.48px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 9px;
+}
+
+.overlay h1 {
+  text-align: center;
+  font: normal normal medium 24px/37px Montserrat;
+  letter-spacing: 0.48px;
+  color: #c5a572;
+  opacity: 1;
+  margin-top: 15px;
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+}
+
+.overlay ul li {
+  text-align: center;
+  font: normal normal medium 20px/37px Montserrat;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  opacity: 0.59;
+}
+@media screen and (max-width: 400px) {
+  .specialtoday {
+    font: normal normal normal 22px/27px Montserrat;
+    letter-spacing: 0.18px;
+    color: #c5a572;
+    text-transform: uppercase;
+    opacity: 1;
+    text-align: center;
+  }
+  .specialtodaycontent {
+    display: inline-block;
+    text-align: center;
+  }
+  .st_p p {
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .todayimage {
+    grid-template-columns: 100%;
+  }
+  .overlay h2 {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .t_list {
+    grid-template-columns: 50%;
+    justify-content: center;
+  }
+  .t_contact {
+    font: normal normal normal 45px/60px Bellefair;
+  }
+}
+
+.reservation {
+  background-color: #f4eee4;
+  opacity: 1;
+  text-align: center;
+  height: auto;
+}
+.r_contact span {
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 0.18px;
+  color: #c5a572;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.r_contact h1 {
+  font: normal normal normal 45px/60px Bellefair;
+  letter-spacing: 0px;
+  color: #121d27;
+  text-transform: capitalize;
+  opacity: 1;
+}
+.r_button form {
+  width: 963px;
+}
+
+.r_button button {
+  top: 4562px;
+  left: 794px;
+  width: 128px;
+  height: 34px;
+  background: #121d27 0% 0% no-repeat padding-box;
+  opacity: 1;
+  font: normal normal medium 20px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .reservationform {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0px;
+    margin: 30px;
+  }
+  .reservationform1 {
+    width: 100%;
+  }
+  .reservationform2 {
+    width: 100%;
+  }
+  .r_button form {
+    margin-left: 0px;
+    margin: 30px;
+    width: 91%;
+  }
+  .r_buttonline {
+    width: 93%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .t_list {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .t_contact {
+    font: normal normal normal 45px/60px Bellefair;
+  }
+}
+
+.team h1 {
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 0.18px;
+  color: #c5a572;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.teamcontent h1 {
+  font: normal normal normal 45px/60px Bellefair;
+  letter-spacing: 0px;
+  color: #121d27;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.teamcontent p {
+  text-align: left;
+  font: normal normal medium 20px/37px Montserrat;
+  letter-spacing: 0.4px;
+  color: #000000;
+  opacity: 0.59;
+}
+
+.team {
+  margin: 30px;
+}
+
+.teamimage {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent linear-gradient(180deg, #121d277d 0%, #121d27f2 100%)
+    0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.teamimage h2 {
+  font: normal normal normal 40px/60px Bellefair;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.teamimage span {
+  font: normal normal normal 25px/60px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 0.65;
+}
+
+.t_bg {
+  background-image: url(../Assets/testimonialbg.png);
+  width: 100%;
+  height: auto;
+  /* background: #121d27 0% 0% no-repeat padding-box;
+  opacity: 0.75; */
+}
+.t_contact span {
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 0.18px;
+  color: #c5a572;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.t_contact h1 {
+  font: normal normal normal 45px/60px Bellefair;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.t_b_bg {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 20px;
+}
+
+.t_b_bg_u {
+  background: #ffffff00 0% 0% no-repeat padding-box;
+  border: 0.5px solid #c5a572;
+  opacity: 1;
+  text-align: center;
+}
+
+.t_b_bg_u p {
+  text-align: center;
+  font: normal normal medium 20px/31px Montserrat;
+  letter-spacing: 0.54px;
+  color: #000000;
+  opacity: 0.52;
+}
+
+.t_b_bg_u span {
+  text-align: center;
+  font: normal normal normal 19px/40px Montserrat;
+  letter-spacing: 0.51px;
+  color: #121d27;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .t_list {
+    grid-template-columns: 100%;
+  }
+  .t_contact {
+    font: normal normal normal 45px/60px Bellefair;
+  }
+}
+@media screen and (max-width: 800px) {
+  .t_list {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .t_contact {
+    font: normal normal normal 45px/60px Bellefair;
+  }
+}
+
+.blog_contact span {
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 0.18px;
+  color: #c5a572;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.blog_contact p {
+  text-align: center;
+  font: normal normal normal 45px/60px Bellefair;
+  letter-spacing: 0px;
+  color: #121d27;
+  text-transform: capitalize;
+  opacity: 1;
+  width: 57%;
+  margin-left: 320px;
+}
+
+.b_2 p {
+  text-align: center;
+  font: normal normal medium 25px/40px Montserrat;
+  letter-spacing: 0px;
+  color: #121d27;
+  opacity: 1;
+}
+
+.b_2 span {
+  top: 7188px;
+  left: 722px;
+  width: 267px;
+  height: 24px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal medium 20px/31px Montserrat;
+  letter-spacing: 0.4px;
+  color: #000000;
+  opacity: 0.43;
+  margin-top: 30px;
+}
+.b_2 {
+  background-color: #c5a57230;
+}
+
+.b_4 span {
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 20px/50px Montserrat;
+  letter-spacing: 0px;
+  color: #979797;
+  opacity: 1;
+}
+
+.b_4 h1 {
+  text-align: left;
+  font: normal normal medium 25px/40px Montserrat;
+  letter-spacing: 0px;
+  color: #271d12;
+  opacity: 1;
+}
+.b_4 p {
+  text-align: left;
+  font: normal normal medium 20px/31px Montserrat;
+  letter-spacing: 0.4px;
+  color: #000000;
+  opacity: 0.59;
+}
+
+.b_4 h4 {
+  text-align: left;
+  font: normal normal medium 20px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #c5a572;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .bloglist {
+    grid-template-columns: 100%;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .blog_contact {
+    text-align: center;
+  }
+  .blog_contact span {
+    font: normal normal normal 22px/27px Montserrat;
+    letter-spacing: 0.18px;
+    color: #c5a572;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  .blog_contact p {
+    text-align: center;
+    font: normal normal normal 30px/30px Bellefair;
+    letter-spacing: 0px;
+    color: #121d27;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+
+.tourcontact span {
+  top: 8252px;
+  left: 772px;
+  width: 151px;
+  height: 27px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 0.18px;
+  color: #c5a572;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.tourcontact h1 {
+  text-align: center;
+  font: normal normal normal 45px/60px Bellefair;
+  letter-spacing: 0px;
+  color: #121d27;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .takeimage {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
+.new {
+  border-top: 1px dashed #c5a572;
+  width: 20%;
+  margin-top: 40px;
+}
+
+.footerbg {
+  background-image: url(../Assets/footerbg.png);
+}
+.footer {
+  background: #121d27ed 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.f_c h1,
+i {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+.f_c p {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.f_s h1 {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+.f_s ul {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+.f_h h1 {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+.f_h span {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.f_n button {
+  background-color: #c5a572;
+}
+
+.f_n h1 {
+  text-align: left;
+  font: normal normal medium 25px/32px Montserrat;
+  letter-spacing: 0.63px;
+  color: #c5a572;
+  opacity: 1;
+}
+
+.f_n p {
+  text-align: left;
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.f_r p {
+  font: normal normal normal 15px/27px Montserrat;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+@media screen and (max-width: 400px) {
+  .footerlist {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  .border-r-2,
+  .border-dashed {
+    border: none;
+  }
+  .footerlist {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* code */
+}
