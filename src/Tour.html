@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tour</title>
     <link href="./output.css" rel="stylesheet" />
     <link rel="stylesheet" href="../src/CSS/Tour.css" />
     <link
@@ -15,6 +15,17 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+
+        hamburger.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+      });
+    </script>
   </head>
   <body>
     <section class="container">
@@ -41,18 +52,23 @@
     <!-- Start header section -->
     <section class="container">
       <nav>
-        <div>
+        <div class="logo">
           <img src="../Assets/cafelogo.svg" alt="headerlogo" />
         </div>
-        <div>
+        <div class="menu">
           <ul>
-            <a>Home</a>
-            <a>Menu</a>
-            <a>About Us</a>
-            <a>Gallery</a>
-            <a>Services</a>
-            <a>Contact Us</a>
+            <li><a href="/src/index.html">Home</a></li>
+            <li><a href="/src/Menu.html">Menu</a></li>
+            <li><a href="/src/About.html">About Us</a></li>
+            <li><a href="/src/Tour.html">Gallery</a></li>
+            <li><a href="/src/Services.html">Services</a></li>
+            <li><a href="/src/Contact.html">Contact Us</a></li>
           </ul>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
     </section>

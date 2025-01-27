@@ -33,16 +33,80 @@
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   background-color: #121d27;
 }
 
-nav ul a {
+.logo img {
+  height: 50px;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 0 10px;
+}
+
+.menu ul a {
   color: white;
-  margin-right: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu ul a:hover {
+  color: #c5a572;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
   cursor: pointer;
 }
-nav ul {
-  margin-top: 20px;
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #121d27;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+
+  .menu.active ul {
+    display: flex;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
 
 .bgcafe {
@@ -159,15 +223,20 @@ nav ul {
   }
 }
 @media screen and (max-width: 800px) {
-  .t_list {
-    grid-template-columns: 100%;
-    justify-content: center;
+  .r_buttonline {
+    width: 115%;
   }
-  .t_contact {
-    font: normal normal normal 45px/60px Bellefair;
+  .r_button form {
+    width: 58%;
+  }
+  .rf_button {
+    margin-left: 180px;
   }
 }
 
+.rf {
+  width: 80%;
+}
 .new {
   border-top: 1px dashed #c5a572;
   width: 20%;

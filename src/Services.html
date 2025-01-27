@@ -15,6 +15,16 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+
+        hamburger.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+      });
+    </script>
   </head>
   <body>
     <section class="container">
@@ -41,18 +51,23 @@
     <!-- Start header section -->
     <section class="container">
       <nav>
-        <div>
+        <div class="logo">
           <img src="../Assets/cafelogo.svg" alt="headerlogo" />
         </div>
-        <div>
+        <div class="menu">
           <ul>
-            <a>Home</a>
-            <a>Menu</a>
-            <a>About Us</a>
-            <a>Gallery</a>
-            <a>Services</a>
-            <a>Contact Us</a>
+            <li><a href="/src/index.html">Home</a></li>
+            <li><a href="/src/Menu.html">Menu</a></li>
+            <li><a href="/src/About.html">About Us</a></li>
+            <li><a href="/src/Tour.html">Gallery</a></li>
+            <li><a href="/src/Services.html">Services</a></li>
+            <li><a href="/src/Contact.html">Contact Us</a></li>
           </ul>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
     </section>
@@ -76,11 +91,20 @@
       <div class="services m-8 mt-20 pb-10">
         <div class="grid grid-cols-2 servicescontent">
           <div class="sl">
-            <h1>Our Services</h1>
-            <span>We Hold Events</span>
+            <h1
+              class="text-left [font:normal_normal_normal_22px/27px_Montserrat] tracking-[0.44px] text-[#c5a572] uppercase opacity-100"
+            >
+              Our Services
+            </h1>
+            <span
+              class="text-left [font:normal_normal_normal_60px/69px_Bellefair] tracking-[1.2px] text-[#121d27] opacity-100"
+              >We Hold Events</span
+            >
           </div>
           <div class="sr">
-            <p>
+            <p
+              class="text-left [font:normal_normal_medium_20px/37px_Montserrat] tracking-[0.4px] text-[#000000] opacity-[0.59]"
+            >
               Iste sed saepe animi magnam voluptatibus voluptatibus natus
               quaerat. Sit sunt id rem. Doloribus et quam et tempora veritatis
               praesentium vero. Tempora repudiandae quia
@@ -88,12 +112,20 @@
           </div>
         </div>
         <div class="serviceslist mt-20 justify-items-center">
-          <div class="flex w-[80%]">
-            <div class="s1 w-full">
+          <div class="flex w-[80%] services">
+            <div
+              class="bg-[#f4eee4] bg-no-repeat opacity-100 justify-items-center p-[27px] w-full"
+            >
               <img src="../Assets/services/wedding-rings.svg" alt="" />
-              <h1>Wedding Events</h1>
+              <h1
+                class="text-center [font:normal_normal_normal_50px/40px_Bellefair] tracking-[0px] text-[#121d27] opacity-100 mt-[20px] mb-[20px]"
+              >
+                Wedding Events
+              </h1>
               <img src="../Assets/services/commonicon.svg" alt="" />
-              <p>
+              <p
+                class="text-center [font:normal_normal_medium_20px/31px_Montserrat] tracking-[0.4px] text-[#000000] opacity-60"
+              >
                 Explicabo laborum facilis cupiditate sunt ducimus cupiditate
                 quos. Quia ad vel et qui voluptas praesentium. Rerum eos cum.
                 Sit quia quasi distinctio repellat in pariatur sit.Minus
@@ -103,13 +135,21 @@
             </div>
             <div><img src="../Assets/services/ser3.png" alt="" /></div>
           </div>
-          <div class="flex w-[80%]">
+          <div class="flex w-[80%] services">
             <div><img src="../Assets/services/ser2.png" alt="" /></div>
-            <div class="s1 w-full">
+            <div
+              class="bg-[#f4eee4] bg-no-repeat opacity-100 justify-items-center p-[27px] w-full"
+            >
               <img src="../Assets/services/restauranticon.svg" alt="" />
-              <h1>Holiday Parties</h1>
+              <h1
+                class="text-center [font:normal_normal_normal_50px/40px_Bellefair] tracking-[0px] text-[#121d27] opacity-100 mt-[20px] mb-[20px]"
+              >
+                Holiday Parties
+              </h1>
               <img src="../Assets/services/commonicon.svg" alt="" />
-              <p>
+              <p
+                class="text-center [font:normal_normal_medium_20px/31px_Montserrat] tracking-[0.4px] text-[#000000] opacity-60"
+              >
                 Explicabo laborum facilis cupiditate sunt ducimus cupiditate
                 quos. Quia ad vel et qui voluptas praesentium. Rerum eos cum.
                 Sit quia quasi distinctio repellat in pariatur sit.Minus
@@ -118,12 +158,20 @@
               </p>
             </div>
           </div>
-          <div class="flex w-[80%]">
-            <div class="s1 w-full">
+          <div class="flex w-[80%] services">
+            <div
+              class="bg-[#f4eee4] bg-no-repeat opacity-100 justify-items-center p-[27px] w-full"
+            >
               <img src="../Assets/services/birthday-cakeicon.svg" alt="" />
-              <h1>Birthday Parties</h1>
+              <h1
+                class="text-center [font:normal_normal_normal_50px/40px_Bellefair] tracking-[0px] text-[#121d27] opacity-100 mt-[20px] mb-[20px]"
+              >
+                Birthday Parties
+              </h1>
               <img src="../Assets/services/commonicon.svg" alt="" />
-              <p>
+              <p
+                class="text-center [font:normal_normal_medium_20px/31px_Montserrat] tracking-[0.4px] text-[#000000] opacity-60"
+              >
                 Explicabo laborum facilis cupiditate sunt ducimus cupiditate
                 quos. Quia ad vel et qui voluptas praesentium. Rerum eos cum.
                 Sit quia quasi distinctio repellat in pariatur sit.Minus
@@ -133,13 +181,21 @@
             </div>
             <div><img src="../Assets/services/ser3.png" alt="" /></div>
           </div>
-          <div class="flex w-[80%]">
+          <div class="flex w-[80%] services">
             <div><img src="../Assets/services/ser4.png" alt="" /></div>
-            <div class="s1 w-full">
+            <div
+              class="bg-[#f4eee4] bg-no-repeat opacity-100 justify-items-center p-[27px] w-full"
+            >
               <img src="../Assets/services/bar.svg" alt="" />
-              <h1>Social Events</h1>
+              <h1
+                class="text-center [font:normal_normal_normal_50px/40px_Bellefair] tracking-[0px] text-[#121d27] opacity-100 mt-[20px] mb-[20px]"
+              >
+                Social Events
+              </h1>
               <img src="../Assets/services/commonicon.svg" alt="" />
-              <p>
+              <p
+                class="text-center [font:normal_normal_medium_20px/31px_Montserrat] tracking-[0.4px] text-[#000000] opacity-60"
+              >
                 Explicabo laborum facilis cupiditate sunt ducimus cupiditate
                 quos. Quia ad vel et qui voluptas praesentium. Rerum eos cum.
                 Sit quia quasi distinctio repellat in pariatur sit.Minus
@@ -148,12 +204,20 @@
               </p>
             </div>
           </div>
-          <div class="flex w-[80%]">
-            <div class="s1 w-full">
+          <div class="flex w-[80%] services">
+            <div
+              class="bg-[#f4eee4] bg-no-repeat opacity-100 justify-items-center p-[27px] w-full"
+            >
               <img src="../Assets/services/cheersicon.svg" alt="" />
-              <h1>Corporate Events</h1>
+              <h1
+                class="text-center [font:normal_normal_normal_50px/40px_Bellefair] tracking-[0px] text-[#121d27] opacity-100 mt-[20px] mb-[20px]"
+              >
+                Corporate Events
+              </h1>
               <img src="../Assets/services/commonicon.svg" alt="" />
-              <p>
+              <p
+                class="text-center [font:normal_normal_medium_20px/31px_Montserrat] tracking-[0.4px] text-[#000000] opacity-60"
+              >
                 Explicabo laborum facilis cupiditate sunt ducimus cupiditate
                 quos. Quia ad vel et qui voluptas praesentium. Rerum eos cum.
                 Sit quia quasi distinctio repellat in pariatur sit.Minus
@@ -163,13 +227,21 @@
             </div>
             <div><img src="../Assets/services/ser5.png" alt="" /></div>
           </div>
-          <div class="flex w-[80%]">
+          <div class="flex w-[80%] services">
             <div><img src="../Assets/services/ser6.png" alt="" /></div>
-            <div class="s1 w-full">
+            <div
+              class="bg-[#f4eee4] bg-no-repeat opacity-100 justify-items-center p-[27px] w-full"
+            >
               <img src="../Assets/services/cheersicon.svg" alt="" />
-              <h1>Private Party</h1>
+              <h1
+                class="text-center [font:normal_normal_normal_50px/40px_Bellefair] tracking-[0px] text-[#121d27] opacity-100 mt-[20px] mb-[20px]"
+              >
+                Private Party
+              </h1>
               <img src="../Assets/services/commonicon.svg" alt="" />
-              <p>
+              <p
+                class="text-center [font:normal_normal_medium_20px/31px_Montserrat] tracking-[0.4px] text-[#000000] opacity-60"
+              >
                 Explicabo laborum facilis cupiditate sunt ducimus cupiditate
                 quos. Quia ad vel et qui voluptas praesentium. Rerum eos cum.
                 Sit quia quasi distinctio repellat in pariatur sit.Minus
@@ -187,14 +259,22 @@
     <section class="container">
       <div class="relative">
         <img src="../Assets/services/servicesbg.png" alt="" class="readimage" />
-        <div class="overlay">
+        <div
+          class="absolute top-0 left-[0] w-full h-full text-[white] flex flex-col justify-center items-center text-center bg-[#121d27ad] bg-no-repeat opacity-100"
+        >
           <div class="w-[60%] rc">
-            <h1>
+            <h1
+              class="text-center [font:normal_normal_normal_40px/70px_Bellefair] tracking-[0px] capitalize opacity-100"
+            >
               With A Full Range Of Event Management Service And Super Menu, Our
               Client Achieve <span class="text-yellow-600">Successful</span> And
               Prosperous Events!
             </h1>
-            <button>Read More</button>
+            <button
+              class="top-[4824px] left-[757px] w-[157px] h-[53px] bg-[#ffffff00] bg-no-repeat border-[1px] border-[solid] border-[#ffffff] opacity-100 text-[white]"
+            >
+              Read More
+            </button>
           </div>
         </div>
       </div>
@@ -205,8 +285,16 @@
     <section class="container">
       <div class="tour justify-items-center mt-20 m-8 pb-10">
         <div class="tourcontent">
-          <h1>Take A Tour</h1>
-          <h2>Our Happy Moments</h2>
+          <h1
+            class="text-center [font:normal_normal_normal_22px/27px_Montserrat] tracking-[0.18px] text-[#c5a572] uppercase opacity-100"
+          >
+            Take A Tour
+          </h1>
+          <h2
+            class="text-center [font:normal_normal_normal_45px/60px_Bellefair] tracking-[0px] text-[#121d27] capitalize opacity-100"
+          >
+            Our Happy Moments
+          </h2>
         </div>
         <div class="grid grid-cols-4 gap-8 mt-8 tourimage">
           <div>
@@ -230,15 +318,29 @@
     <section class="container">
       <div class="justify-items-center pb-32">
         <div class="contact w-[70%]">
-          <h1>Contact Us</h1>
-          <h2>Book Your Reservation Today</h2>
-          <p>
+          <h1
+            class="text-center [font:normal_normal_normal_22px/27px_Montserrat] tracking-[0.18px] text-[#c5a572] uppercase opacity-100"
+          >
+            Contact Us
+          </h1>
+          <h2
+            class="text-center [font:normal_normal_normal_45px/65px_Bellefair] tracking-[0px] text-[#000000] capitalize opacity-100 mt-[20px]"
+          >
+            Book Your Reservation Today
+          </h2>
+          <p
+            class="text-center [font:normal_normal_medium_20px/37px_Montserrat] tracking-[0.4px] text-[#121d27] opacity-[0.59] mt-[15px]"
+          >
             Dolorum corrupti nesciunt repellendus sapiente et dolorum est.
             Possimus voluptatem nemo harum. Nihil autem sed praesentium odit et
             consequatur quis. Sint id et dolorem nulla sapiente eos harum eum.
           </p>
           <div class="justify-self-center mt-9">
-            <button>Book Table</button>
+            <button
+              class="text-center top-[6133px] w-[167px] h-[43px] bg-[#ffffff] bg-no-repeat border-[1px] border-[solid] border-[#c5a572] opacity-100 text-[#c5a572]"
+            >
+              Book Table
+            </button>
           </div>
         </div>
       </div>
@@ -347,7 +449,7 @@
             <button
               class="bg-blue-500 hover:bg-blue-700 text-white w-full mt-3 font-bold py-2 px-4 rounded"
             >
-              Button
+              Subscribe Now
             </button>
           </div>
         </div>

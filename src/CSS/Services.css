@@ -13,7 +13,6 @@
   width: 100%;
   height: 100%;
   max-width: 1400px !important;
-  /* background-color: rgb(108, 173, 42); */
 }
 .fs_list i {
   margin-right: 10px;
@@ -33,16 +32,80 @@
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   background-color: #121d27;
 }
 
-nav ul a {
+.logo img {
+  height: 50px;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 0 10px;
+}
+
+.menu ul a {
   color: white;
-  margin-right: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu ul a:hover {
+  color: #c5a572;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
   cursor: pointer;
 }
-nav ul {
-  margin-top: 20px;
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #121d27;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+
+  .menu.active ul {
+    display: flex;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
 
 .bgcafe {
@@ -79,119 +142,20 @@ nav ul {
   /* code */
 }
 
-.sl h1 {
-  text-align: left;
-  font: normal normal normal 22px/27px Montserrat;
-  letter-spacing: 0.44px;
-  color: #c5a572;
-  text-transform: uppercase;
-  opacity: 1;
-}
-
-.sl span {
-  text-align: left;
-  font: normal normal normal 60px/69px Bellefair;
-  letter-spacing: 1.2px;
-  color: #121d27;
-  opacity: 1;
-}
-
-.sr p {
-  text-align: left;
-  font: normal normal medium 20px/37px Montserrat;
-  letter-spacing: 0.4px;
-  color: #000000;
-  opacity: 0.59;
-}
-
-.s1 {
-  background: #f4eee4 0% 0% no-repeat padding-box;
-  opacity: 1;
-  justify-items: center;
-  padding: 27px;
-}
-
-.s1 h1 {
-  text-align: center;
-  font: normal normal normal 50px/40px Bellefair;
-  letter-spacing: 0px;
-  color: #121d27;
-  opacity: 1;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.s1 p {
-  text-align: center;
-  font: normal normal medium 20px/31px Montserrat;
-  letter-spacing: 0.4px;
-  color: #000000;
-  opacity: 0.6;
-}
 @media screen and (max-width: 400px) {
   .servicescontent {
     grid-template-columns: 100%;
   }
   .serviceslist {
-    grid-template-columns: 100%;
+    margin-top: 0px;
+  }
+  .services {
+    display: inline;
+    margin: 30px;
   }
 }
 @media screen and (max-width: 800px) {
   /* code */
-}
-
-.readmorebg {
-  background: #121d27 0% 0% no-repeat padding-box;
-  opacity: 0.83;
-}
-
-.readmoremainbg {
-  background-image: url(/Assets/services/servicesbg.png);
-  height: 100%;
-  object-fit: cover;
-}
-
-.readmoremainbg button {
-  background: #ffffff00 0% 0% no-repeat padding-box;
-  border: 1px solid #ffffff;
-  opacity: 1;
-  color: white;
-}
-
-.overlay {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #121d27ad 0% 0% no-repeat padding-box;
-  opacity: 1;
-}
-
-.overlay h1 {
-  text-align: center;
-  font: normal normal normal 40px/70px Bellefair;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-  opacity: 1;
-}
-
-.overlay button {
-  top: 4824px;
-  left: 757px;
-  width: 157px;
-  height: 53px;
-  /* UI Properties */
-  background: #ffffff00 0% 0% no-repeat padding-box;
-  border: 1px solid #ffffff;
-  opacity: 1;
-  color: white;
 }
 
 @media screen and (max-width: 400px) {
@@ -222,22 +186,6 @@ nav ul {
   /* code */
 }
 
-.tourcontent h1 {
-  text-align: center;
-  font: normal normal normal 22px/27px Montserrat;
-  letter-spacing: 0.18px;
-  color: #c5a572;
-  text-transform: uppercase;
-  opacity: 1;
-}
-.tourcontent h2 {
-  text-align: center;
-  font: normal normal normal 45px/60px Bellefair;
-  letter-spacing: 0px;
-  color: #121d27;
-  text-transform: capitalize;
-  opacity: 1;
-}
 @media screen and (max-width: 400px) {
   .tourimage {
     grid-template-columns: 100%;
@@ -245,46 +193,6 @@ nav ul {
 }
 @media screen and (max-width: 800px) {
   /* code */
-}
-
-.contact h1 {
-  text-align: center;
-  font: normal normal normal 22px/27px Montserrat;
-  letter-spacing: 0.18px;
-  color: #c5a572;
-  text-transform: uppercase;
-  opacity: 1;
-}
-
-.contact h2 {
-  text-align: center;
-  font: normal normal normal 45px/65px Bellefair;
-  letter-spacing: 0px;
-  color: #000000;
-  text-transform: capitalize;
-  opacity: 1;
-  margin-top: 20px;
-}
-
-.contact p {
-  text-align: center;
-  font: normal normal medium 20px/37px Montserrat;
-  letter-spacing: 0.4px;
-  color: #121d27;
-  opacity: 0.59;
-  margin-top: 15px;
-}
-
-.contact button {
-  text-align: center;
-
-  top: 6133px;
-  width: 167px;
-  height: 43px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #c5a572;
-  opacity: 1;
-  color: #c5a572;
 }
 
 @media screen and (max-width: 400px) {
