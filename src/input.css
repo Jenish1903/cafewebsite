@@ -253,7 +253,7 @@ nav {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .ourstory {
     display: inline-block;
   }
@@ -285,6 +285,7 @@ nav {
   .ourstoryimage {
     margin-top: 30px;
     justify-items: center;
+    justify-content: center;
   }
 
   .ourstoryimage .ourstoryimg1 {
@@ -348,8 +349,16 @@ nav {
     left: 91px;
   }
 }
-@media screen and (max-width: 800px) {
-  /* code */
+@media screen and (min-width: 800px) {
+  .happyservices img {
+    left: 90px;
+  }
+  .birthdayservices img {
+    left: 90px;
+  }
+  .anniversariesservices img {
+    left: 90px;
+  }
 }
 
 .todaysection {
@@ -471,13 +480,16 @@ nav {
     margin-top: 70px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .t_list {
     grid-template-columns: 50%;
     justify-content: center;
   }
   .t_contact {
     font: normal normal normal 45px/60px Bellefair;
+  }
+  .overlay {
+    top: -9px;
   }
 }
 
@@ -541,13 +553,17 @@ nav {
     width: 93%;
   }
 }
-@media screen and (max-width: 800px) {
-  .t_list {
-    grid-template-columns: 100%;
-    justify-content: center;
+@media screen and (min-width: 800px) {
+  .r_button form {
+    margin-left: 50px;
+    margin: 30px;
+    width: 91%;
   }
-  .t_contact {
-    font: normal normal normal 45px/60px Bellefair;
+  .r_buttonline {
+    width: 97%;
+  }
+  .reservationform {
+    margin-left: 81px;
   }
 }
 
@@ -783,8 +799,13 @@ nav {
     width: 100%;
   }
 }
-@media screen and (max-width: 800px) {
-  /* code */
+@media screen and (min-width: 800px) {
+  .blog_contact {
+    justify-items: center;
+  }
+  .blog_contact p {
+    margin-left: 0px;
+  }
 }
 
 .tourcontact span {

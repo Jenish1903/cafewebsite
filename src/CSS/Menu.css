@@ -264,8 +264,19 @@ nav {
     display: none;
   }
 }
-@media screen and (max-width: 800px) {
-  /* code */
+@media screen and (min-width: 800px) {
+  .smainprice {
+    grid-template-columns: 100%;
+  }
+  .lmainprice {
+    grid-template-columns: 100%;
+  }
+  .smimage {
+    height: 100%;
+  }
+  .smimage img {
+    height: 100%;
+  }
 }
 .lunchimg {
   background-image: url("/Assets/menu/bgmenuimg.png");
