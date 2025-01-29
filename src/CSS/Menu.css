@@ -264,7 +264,7 @@ nav {
     display: none;
   }
 }
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .smainprice {
     grid-template-columns: 100%;
   }
@@ -277,7 +277,7 @@ nav {
   .smimage img {
     height: 100%;
   }
-}
+} */
 .lunchimg {
   background-image: url("/Assets/menu/bgmenuimg.png");
 }
